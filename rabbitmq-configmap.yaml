@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: rabbitmq-config
+data:
+  rabbitmq.conf: |
+    loopback_users.guest = false
+    default_user = aisha
+    default_pass = aisha
+  enabled_plugins: |
+    [rabbitmq_management].
